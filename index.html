@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <script src="./packages/bson.bundle.js"></script>
+    <title>ToDo App</title>
+</head>
+<body>
+    <div>
+        <p class="p-center">ToDo App</p>
+        <div class="side">
+            <div id="add-tasks" class="btn-left">
+                <button onclick="newElement()" id="add-task" class="btn" role="button"> Add Task</button>
+            </div>
+            <div>
+                <input class="input" type="text" id="myInput" placeholder="Title...">
+            </div>
+        </div>
+       
+        <div class="container">
+            <div><p>Tasks</p></div>
+        </div>
+        <hr class="hr">
+        <div id="output" class="output">
+
+            <div id="tasks" class="box">
+                     <p id="task-box" class="center">Task</p> 
+            </div>
+            
+            <textarea class="task-input" oninput="autoHeight(this)"></textarea>
+
+            <div class="btn-delete">
+                <button id="delete-task" class="btn3" role="button">delete</button>
+            </div>
+             
+            </div>
+        </div>
+       
+    </div>
+   
+</body>
+</html>
+
+
+
